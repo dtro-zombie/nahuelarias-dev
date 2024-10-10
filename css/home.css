@@ -1,0 +1,95 @@
+:root {
+  --gris: #32373d;
+  --negro: #000000;
+  --blanco: #ffffff;
+  --violeta: #2e0014;
+  --rojo: #ff1b1c;
+}
+
+.home {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 15%;
+  height: 100vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home::before {
+  content: "";
+  background-attachment: fixed;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../src/wallpaperbetter.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(0.7);
+  z-index: -1; /* Asegura que el pseudo-elemento esté detrás de los hijos */
+}
+
+.presentacion {
+  font-size: 40px;
+  text-align: left;
+  color: var(--blanco);
+  backdrop-filter: blur(20px);
+  width: 100%;
+  height: 40%;
+}
+
+.nombreApellido {
+  text-align: left;
+  margin-left: 25%;
+}
+
+.buttonCV {
+  background-color: var(--rojo);
+  border-radius: 5%;
+}
+
+.descargar-cv {
+  display: flex;
+  justify-content: flex-end;
+  width: 80%;
+}
+
+.buttonCV {
+  appearance: none;
+  background-color: var(--rojo);
+  border: 2px solid var(--violeta);
+  border-radius: 15px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  width: 200px;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  will-change: transform;
+}
+
+.buttonCV:disabled {
+  pointer-events: none;
+}
+
+.buttonCV:hover {
+  box-shadow: rgb(255, 255, 255) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.buttonCV:active {
+  box-shadow: none;
+  transform: translateY(0);
+}

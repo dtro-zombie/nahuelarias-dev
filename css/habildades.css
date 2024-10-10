@@ -1,0 +1,32 @@
+:root {
+  --gris: #32373d;
+  --negro: #000000;
+  --blanco: #ffffff;
+  --violeta: #2e0014;
+  --rojo: #ff1b1c;
+}
+
+.habilidades {
+  background-color: #0b0b0b;
+  height: 100vh;
+  color: var(--blanco);
+}
+
+.containerHabilidadesTitulo {
+  padding-left: 20%;
+  margin-top: 10px;
+}
+
+.containerDurasYBlandas {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  height: 80%;
+}
+
+.list-unstyled li {
+  padding-bottom: 5px;
+
+  list-style: none;
+}

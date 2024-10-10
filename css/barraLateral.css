@@ -1,0 +1,116 @@
+/* var gris = "797B84";  */
+
+:root {
+  --gris: #32373d;
+  --negro: #000000;
+  --blanco: #ffffff;
+  --violeta: #2e0014;
+  --rojo: #ff1b1c;
+}
+
+.containerbarralateral {
+  position: fixed;
+  background: var(--gris);
+  height: 100%;
+  width: 15%;
+  font-size: 20px;
+  z-index: 10;
+}
+body {
+  background-color: var(--negro);
+  margin: 0;
+  padding: 0;
+  color: var(--blanco);
+  font-family: "Source Code Pro", monospace;
+  font-optical-sizing: auto;
+}
+
+.contenedor-banner-img {
+  width: 96%;
+  height: 25%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../src/banner.jpeg");
+  border: #32373d solid 4px;
+  border-radius: 10%;
+}
+
+.blur {
+  background-color: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(2px);
+  width: 100%;
+  height: 100%;
+  border-radius: 10%;
+}
+
+.lista-items ul {
+  padding: 0;
+  list-style: none;
+}
+
+.lista-items {
+  text-align: center;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.lista-items li {
+  padding: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out; /* Transición suave de transform */
+}
+
+.lista-redes ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center; /* Centra los íconos horizontalmente */
+  align-items: center; /* Centra los íconos verticalmente */
+  padding: 0;
+  height: 70%;
+}
+
+.lista-redes li {
+  margin: 0 20px; /* Espacio entre íconos */
+  height: 20%;
+  cursor: pointer;
+}
+
+.lista-redes li svg {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease-in-out; /* Transición suave del filtro */
+}
+
+.lista-redes li:hover svg {
+  transform: scale(1.5);
+  filter: none; /* Elimina el filtro de escala de grises al hacer hover */
+  transition: filter 0.3s ease-in-out;
+}
+
+/* efectos */
+
+.lista-items li:hover {
+  cursor: pointer;
+  color: var(--rojo);
+  transform: scale(1.05); /* Escala el SVG al hacer hover */
+}
+
+.avatar {
+  border-color: var(--gris);
+  border-radius: 100%;
+  border-style: solid;
+  width: 150px;
+  height: 150px;
+  background-color: var(--violeta);
+}
+
+.contenedor-avatar {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
