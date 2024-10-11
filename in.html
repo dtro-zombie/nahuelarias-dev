@@ -9,6 +9,8 @@
 
     <link rel="stylesheet" href="./css/home.css" />
 
+    <link rel="stylesheet" href="./css/sobreMi.css" />
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
@@ -30,13 +32,14 @@
   <body class="col-12">
     <!-- menu -->
 
+    <!-- navbar navbar-expand-md navbar-dark fixed-top bg-dark -->
     <nav
-      class="navbar sticky-top navbar-expand-lg navbar-dark p-3 bg-dark"
+      class="navbar navbar-expand-md navbar-dark fixed-top bg-dark"
       id="headerNav"
     >
       <div class="container-fluid">
         <a class="navbar-brand d-block d-lg-none" href="#">
-          <img src="src/avatar.png" height="80" />
+          <img src="src/avatar.png" height="40" />
         </a>
         <button
           class="navbar-toggler"
@@ -84,7 +87,10 @@
 
     <!-- Inicio -->
 
-    <section class="home text-light" style="height: 83vh">
+    <section
+      class="home text-light d-flex justify-content-center align-items-center"
+      style="min-height: 100vh"
+    >
       <div class="d-flex justify-content-center align-items-center w-100 h-100">
         <div class="col-12">
           <div class="p-5 mb-4 presentacion rounded-2">
@@ -102,8 +108,37 @@
 
     <!-- Sobre mi -->
 
-    <section>
-      <div>Hola</div>
+    <section
+      class="text-light bg-black d-flex flex-column justify-content-center align-items-center"
+      style="min-height: 100vh"
+    >
+      <div class="col-12 pt-5 px-5">
+        <h2 class="col-12">Sobre mí</h2>
+        <p class="raya"></p>
+      </div>
+
+      <div
+        class="col-12 d-flex flex-wrap justify-content-center align-items-center"
+      >
+        <div class="col-12 col-md-4 text-center mb-4">
+          <img src="./src/avatar.png" alt="" class="img-fluid rounded-circle" />
+        </div>
+
+        <div class="col-12 col-md-8 p-5 text-md-left fs-3">
+          <p>
+            Hola, mi nombre es Nahuel, soy desarrollador full stack apasionado
+            por crear soluciones web personalizadas y eficientes. Con
+            experiencia de 2 años en frontend, backend y bases de datos, me
+            enfoco en desarrollar aplicaciones web robustas y escalables que se
+            adapten a las necesidades de tu negocio.
+          </p>
+
+          <p>
+            Explorá mis proyectos y habilidades, para descubrir cómo puedo
+            ayudarte a llevar tus ideas digitales al siguiente nivel.
+          </p>
+        </div>
+      </div>
     </section>
   </body>
 </html>
