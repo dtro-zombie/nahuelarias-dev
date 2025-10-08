@@ -1,0 +1,5 @@
+.banner img {
+  height: 100vh;       /* alto del banner */
+  object-fit: cover;   /* recorta sin deformar */
+  filter: brightness(70%); /* oscurece un poco para resaltar el texto */
+}

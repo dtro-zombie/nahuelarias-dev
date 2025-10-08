@@ -1,434 +1,78 @@
-<html>
-  <head>
-    <link
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
-    <link rel="stylesheet" href="./css/barraLateral.css" />
-    <link rel="stylesheet" href="./css/home.css" />
-    <link rel="stylesheet" href="./css/sobreMi.css" />
-    <link rel="stylesheet" href="./css/habildades.css" />
-    <link rel="stylesheet" href="./css/proyectos.css" />
-    <link rel="stylesheet" href="./css/hobbies.css" />
-    <link rel="stylesheet" href="./css/contacto.css" />
+</head>
+<body>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-
-  <body>
-    <div>
-      <!-- Barra lateral -->
-      <div class="containerbarralateral">
-        <div class="contenedor-banner-img">
-          <div class="blur">
-            <div class="contenedor-avatar">
-              <img class="avatar" src="/src/avatar.png" alt="" />
-            </div>
-          </div>
-        </div>
-
-        <div class="container-menu">
-          <div class="lista-items">
-            <ul class="">
-              <li>
-                <p>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-house"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"
-                    />
-                  </svg>
-                  Inicio
-                </p>
-              </li>
-              <li class="" aria-current="true">
-                <p>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-person"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"
-                    />
-                  </svg>
-                  Sobre mí
-                </p>
-              </li>
-              <li class="">
-                <p>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-code-slash"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"
-                    />
-                  </svg>
-                  Habilidades
-                </p>
-              </li>
-              <li class="">
-                <p>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-pc-display"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M8 1a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1zm1 13.5a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0m2 0a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0M9.5 1a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zM9 3.5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 0-1h-5a.5.5 0 0 0-.5.5M1.5 2A1.5 1.5 0 0 0 0 3.5v7A1.5 1.5 0 0 0 1.5 12H6v2h-.5a.5.5 0 0 0 0 1H7v-4H1.5a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5H7V2z"
-                    />
-                  </svg>
-                 Proyectos
-                </p>
-              </li>
-              <li class="">
-                <p>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-ui-checks-grid"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M2 10h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1m9-9h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-3a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1m0 9a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1zm0-10a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h3a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM2 9a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h3a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2zm7 2a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-3a2 2 0 0 1-2-2zM0 2a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm5.354.854a.5.5 0 1 0-.708-.708L3 3.793l-.646-.647a.5.5 0 1 0-.708.708l1 1a.5.5 0 0 0 .708 0z"
-                    />
-                  </svg>
-                  Hobbies
-                </p>
-              </li>
-              <li class="">
-                <p>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-envelope"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"
-                    />
-                  </svg>
-                  Contáctame
-                </p>
-              </li>
-            </ul>
-          </div>
-
-          <div class="lista-redes">
-            <ul class="">
-              <li class="" aria-current="true">
-                <svg
-                  viewBox="0 0 256 250"
-                  width="30"
-                  height="30"
-                  fill="#fff"
-                  xmlns="http://www.w3.org/2000/svg"
-                  preserveAspectRatio="xMidYMid"
-                >
-                  <path
-                    d="M128.001 0C57.317 0 0 57.307 0 128.001c0 56.554 36.676 104.535 87.535 121.46 6.397 1.185 8.746-2.777 8.746-6.158 0-3.052-.12-13.135-.174-23.83-35.61 7.742-43.124-15.103-43.124-15.103-5.823-14.795-14.213-18.73-14.213-18.73-11.613-7.944.876-7.78.876-7.78 12.853.902 19.621 13.19 19.621 13.19 11.417 19.568 29.945 13.911 37.249 10.64 1.149-8.272 4.466-13.92 8.127-17.116-28.431-3.236-58.318-14.212-58.318-63.258 0-13.975 5-25.394 13.188-34.358-1.329-3.224-5.71-16.242 1.24-33.874 0 0 10.749-3.44 35.21 13.121 10.21-2.836 21.16-4.258 32.038-4.307 10.878.049 21.837 1.47 32.066 4.307 24.431-16.56 35.165-13.12 35.165-13.12 6.967 17.63 2.584 30.65 1.255 33.873 8.207 8.964 13.173 20.383 13.173 34.358 0 49.163-29.944 59.988-58.447 63.157 4.591 3.972 8.682 11.762 8.682 23.704 0 17.126-.148 30.91-.148 35.126 0 3.407 2.304 7.398 8.792 6.14C219.37 232.5 256 184.537 256 128.002 256 57.307 198.691 0 128.001 0Zm-80.06 182.34c-.282.636-1.283.827-2.194.39-.929-.417-1.45-1.284-1.15-1.922.276-.655 1.279-.838 2.205-.399.93.418 1.46 1.293 1.139 1.931Zm6.296 5.618c-.61.566-1.804.303-2.614-.591-.837-.892-.994-2.086-.375-2.66.63-.566 1.787-.301 2.626.591.838.903 1 2.088.363 2.66Zm4.32 7.188c-.785.545-2.067.034-2.86-1.104-.784-1.138-.784-2.503.017-3.05.795-.547 2.058-.055 2.861 1.075.782 1.157.782 2.522-.019 3.08Zm7.304 8.325c-.701.774-2.196.566-3.29-.49-1.119-1.032-1.43-2.496-.726-3.27.71-.776 2.213-.558 3.315.49 1.11 1.03 1.45 2.505.701 3.27Zm9.442 2.81c-.31 1.003-1.75 1.459-3.199 1.033-1.448-.439-2.395-1.613-2.103-2.626.301-1.01 1.747-1.484 3.207-1.028 1.446.436 2.396 1.602 2.095 2.622Zm10.744 1.193c.036 1.055-1.193 1.93-2.715 1.95-1.53.034-2.769-.82-2.786-1.86 0-1.065 1.202-1.932 2.733-1.958 1.522-.03 2.768.818 2.768 1.868Zm10.555-.405c.182 1.03-.875 2.088-2.387 2.37-1.485.271-2.861-.365-3.05-1.386-.184-1.056.893-2.114 2.376-2.387 1.514-.263 2.868.356 3.061 1.403Z"
-                  />
-                </svg>
-              </li>
-
-              <li class="">
-                <svg
-                  width="30"
-                  height="30"
-                  xmlns="http://www.w3.org/2000/svg"
-                  preserveAspectRatio="xMidYMid"
-                  viewBox="0 0 256 256"
-                >
-                  <path
-                    d="M218.123 218.127h-37.931v-59.403c0-14.165-.253-32.4-19.728-32.4-19.756 0-22.779 15.434-22.779 31.369v60.43h-37.93V95.967h36.413v16.694h.51a39.907 39.907 0 0 1 35.928-19.733c38.445 0 45.533 25.288 45.533 58.186l-.016 67.013ZM56.955 79.27c-12.157.002-22.014-9.852-22.016-22.009-.002-12.157 9.851-22.014 22.008-22.016 12.157-.003 22.014 9.851 22.016 22.008A22.013 22.013 0 0 1 56.955 79.27m18.966 138.858H37.95V95.967h37.97v122.16ZM237.033.018H18.89C8.58-.098.125 8.161-.001 18.471v219.053c.122 10.315 8.576 18.582 18.89 18.474h218.144c10.336.128 18.823-8.139 18.966-18.474V18.454c-.147-10.33-8.635-18.588-18.966-18.453"
-                    fill="#0A66C2"
-                  />
-                </svg>
-              </li>
-
-              <li class="">
-                <svg
-                  viewBox="0 0 256 256"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="30"
-                  height="30"
-                  preserveAspectRatio="xMidYMid"
-                >
-                  <defs>
-                    <linearGradient id="a" x1="50%" x2="50%" y1="0%" y2="100%">
-                      <stop offset="0%" stop-color="#2AABEE" />
-                      <stop offset="100%" stop-color="#229ED9" />
-                    </linearGradient>
-                  </defs>
-                  <path
-                    fill="url(#a)"
-                    d="M128 0C94.06 0 61.48 13.494 37.5 37.49A128.038 128.038 0 0 0 0 128c0 33.934 13.5 66.514 37.5 90.51C61.48 242.506 94.06 256 128 256s66.52-13.494 90.5-37.49c24-23.996 37.5-56.576 37.5-90.51 0-33.934-13.5-66.514-37.5-90.51C194.52 13.494 161.94 0 128 0Z"
-                  />
-                  <path
-                    fill="#FFF"
-                    d="M57.94 126.648c37.32-16.256 62.2-26.974 74.64-32.152 35.56-14.786 42.94-17.354 47.76-17.441 1.06-.017 3.42.245 4.96 1.49 1.28 1.05 1.64 2.47 1.82 3.467.16.996.38 3.266.2 5.038-1.92 20.24-10.26 69.356-14.5 92.026-1.78 9.592-5.32 12.808-8.74 13.122-7.44.684-13.08-4.912-20.28-9.63-11.26-7.386-17.62-11.982-28.56-19.188-12.64-8.328-4.44-12.906 2.76-20.386 1.88-1.958 34.64-31.748 35.26-34.45.08-.338.16-1.598-.6-2.262-.74-.666-1.84-.438-2.64-.258-1.14.256-19.12 12.152-54 35.686-5.1 3.508-9.72 5.218-13.88 5.128-4.56-.098-13.36-2.584-19.9-4.708-8-2.606-14.38-3.984-13.82-8.41.28-2.304 3.46-4.662 9.52-7.072Z"
-                  />
-                </svg>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <section class="home">
-        <div class="presentacion">
-          <div class="nombreApellido">
-            <p><b>Nahuel Arias</b></p>
-            <p>Full stack web developer</p>
-          </div>
-
-          <div class="descargar-cv">
-            <button type="button" class="buttonCV">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-download"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"
-                />
-                <path
-                  d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"
-                />
-              </svg>
-
-              Mi cv
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <section class="sobreMi">
-        <div class="containerSobreMi">
-          <div class="seccionTitulo">
-            <h2 class="tituloSobreMi">Sobre mi</h2>
-            <p class="raya"></p>
-          </div>
-
-          <div class="containerAvatarSobreMi">
-            <img src="./src/avatar.png" alt="" />
-
-            <div class="descripcionSobreMi">
-              <p>
-                Hola mi nombre es Nahuel, soy desarrollador full stack apasionado
-                por crear soluciones web personalizadas y eficientes. Con
-                experiencia de 2 años en frontend, backend y bases de datos, me
-                enfoco en desarrollar aplicaciones web robustas y escalables que
-                se adapten a las necesidades de tu negocio. <p>Explorá mis proyectos y habilidades,
-                  para descubrir cómo puedo ayudarte a llevar tus ideas digitales al
-                  siguiente nivel.</p> 
-              </p>
-            </div>
-      
-          </div>
-        </div>
-      </section>
-
-      <section class="habilidades">
-        <div class="habiliadadesContainer">
-               
-          <div class="seccionTitulo">
-            <h2 class="tituloSobreMi">Habilidades</h2>
-            <p class="raya"></p>
-          </div>
-
-        </div>
-        
-        <div class="containerHabilidadesTitulo">
-
-
-          <div class="containerDurasYBlandas">
-            <h3 class="mb-4">Habilidades Blandas</h3>
-            <ul class="list-unstyled">
-                <li><i class="bi bi-people"></i> <strong>Trabajo en equipo:</strong> Capacidad para colaborar eficazmente con otros desarrolladores y miembros del equipo.</li>
-                <li><i class="bi bi-chat-dots"></i> <strong>Comunicación:</strong> Habilidad para expresar ideas técnicas y recibir retroalimentación de manera clara.</li>
-                <li><i class="bi bi-lightbulb"></i> <strong>Creatividad:</strong> Capacidad para proponer soluciones innovadoras a los problemas de diseño y desarrollo.</li>
-                <li><i class="bi bi-alarm"></i> <strong>Gestión del tiempo:</strong> Eficiencia en la priorización de tareas y cumplimiento de plazos.</li>
-                <li><i class="bi bi-lightning-charge"></i> <strong>Adaptabilidad:</strong> Flexibilidad para ajustarse a nuevas tecnologías y métodos de trabajo.</li>
-                <li><i class="bi bi-journal-check"></i> <strong>Resolución de problemas:</strong> Habilidad para identificar, analizar y resolver problemas de manera efectiva.</li>
-                <li><i class="bi bi-puzzle"></i> <strong>Pensamiento crítico:</strong> Capacidad para evaluar diferentes soluciones y tomar decisiones informadas.</li>
-                <li><i class="bi bi-diagram-3"></i> <strong>Organización:</strong> Estructura y organización en el manejo de proyectos y código.</li>
-            </ul>
-    
-            <h3 class="mt-5 mb-4">Habilidades Duras</h3>
-            <ul class="list-unstyled">
-                <li><i class="bi bi-code-slash"></i> <strong>HTML5:</strong> Conocimiento avanzado en el uso de etiquetas y estructuras semánticas.</li>
-                <li><i class="bi bi-file-earmark-code"></i> <strong>CSS3:</strong> Capacidad para crear estilos visuales atractivos y responsivos.</li>
-                <li><i class="bi bi-pen"></i> <strong>JavaScript (ES6+):</strong> Competencia en la manipulación del DOM y desarrollo de interactividad.</li>
-                <li><i class="bi bi-bootstrap"></i> <strong>Bootstrap:</strong> Experiencia en el uso de Bootstrap para crear diseños responsivos y atractivos.</li>
-                <li><i class="bi bi-git"></i> <strong>Control de versiones (Git):</strong> Familiaridad con Git y GitHub para la gestión de código.</li>
-                <li><i class="bi bi-browser-chrome"></i> <strong>SEO Básico:</strong> Conocimiento de las prácticas básicas de optimización para motores de búsqueda.</li>
-                <li><i class="bi bi-terminal"></i> <strong>Command Line:</strong> Habilidad para navegar y ejecutar comandos en la línea de comandos.</li>
-                <li><i class="bi bi-pc-display"></i> <strong>Diseño Responsivo:</strong> Capacidad para crear sitios web que funcionen bien en dispositivos móviles y de escritorio.</li>
-            </ul>
-        </div>
-
-
-        </div>
-        
-
-      </section>
-
-
-      <section class="proyectos">
-        <div class="proyectosContainer">
-    
-            <div class="seccionTituloProyectos">
-                <h2 class="tituloProyectos">Proyectos</h2>
-                <p class="rayaProyectos"></p>
-            </div>
-    
-        </div>
-    
-        <div class="containerProyectos">
-    
-            <div class="containerTarjetasProyectos">
-                <ul class="listadoTarjetasProyectos">
-                    <li class="tarjetaProyecto tarjetaProyectoPintura">
-                        <img src="ruta/a/tu/imagen-pintura.jpg" alt="Pintura">
-                        <h4>Pintura</h4>
-                        <p>Disfruto experimentar con diferentes técnicas y estilos de pintura.</p>
-                    </li>
-                    <li class="tarjetaProyecto tarjetaProyectoMusica">
-                        <img src="ruta/a/tu/imagen-musica.jpg" alt="Música">
-                        <h4>Música</h4>
-                        <p>Toco la guitarra y me encanta componer canciones en mi tiempo libre.</p>
-                    </li>
-                    <li class="tarjetaProyecto tarjetaProyectoFotografia">
-                        <img src="ruta/a/tu/imagen-fotografia.jpg" alt="Fotografía">
-                        <h4>Fotografía</h4>
-                        <p>Me apasiona capturar momentos únicos a través de la lente de mi cámara.</p>
-                    </li>
-                </ul>
-            </div>
-    
-        </div>
-    
-    </section>
-
-
-
-      <section class="hobbi">
-        <div class="habiliadadesContainer">
-    
-            <div class="seccionTitulo">
-                <h2 class="tituloSobreMi">Hobbies</h2>
-                <p class="raya"></p>
-            </div>
-    
-        </div>
-    
-        <div class="containerHobbiesTitulo">
-    
-            <div class="containerTarjetasHobbies">
-                <h3 class="mb-4">Hobbies Creativos</h3>
-                <ul class="listadoTarjetas">
-                    <li class="tarjetaHobby">
-                        <img src="ruta/a/tu/imagen-pintura.jpg" alt="Pintura">
-                        <h4>Pintura</h4>
-                        <p>Disfruto experimentar con diferentes técnicas y estilos de pintura.</p>
-                    </li>
-                    <li class="tarjetaHobby">
-                        <img src="ruta/a/tu/imagen-musica.jpg" alt="Música">
-                        <h4>Música</h4>
-                        <p>Toco la guitarra y me encanta componer canciones en mi tiempo libre.</p>
-                    </li>
-                    <li class="tarjetaHobby">
-                        <img src="ruta/a/tu/imagen-fotografia.jpg" alt="Fotografía">
-                        <h4>Fotografía</h4>
-                        <p>Me apasiona capturar momentos únicos a través de la lente de mi cámara.</p>
-                    </li>
-                 
-                </ul>
-    
-                <h3 class="mt-5 mb-4">Hobbies Activos</h3>
-                <ul class="listadoTarjetas">
-                    <li class="tarjetaHobby">
-                        <img src="ruta/a/tu/imagen-ciclismo.jpg" alt="Ciclismo">
-                        <h4>Ciclismo</h4>
-                        <p>Disfruto de largas rutas en bicicleta explorando nuevas áreas.</p>
-                    </li>
-                    <li class="tarjetaHobby">
-                        <img src="ruta/a/tu/imagen-senderismo.jpg" alt="Senderismo">
-                        <h4>Senderismo</h4>
-                        <p>Me encanta caminar por la naturaleza y descubrir nuevos senderos.</p>
-                    </li>
-                    <li class="tarjetaHobby">
-                        <img src="ruta/a/tu/imagen-esqui.jpg" alt="Esquí">
-                        <h4>Esquí</h4>
-                        <p>Practico esquí durante la temporada invernal.</p>
-                    </li>
-                   
-                </ul>
-            </div>
-    
-        </div>
-    
-    </section>
-
-
-
-
-    <section class="contacto">
-
-      <div class="habiliadadesContainer">
-    
-        <div class="seccionTitulo">
-            <h2 class="titulocontacto">Contactamé</h2>
-            <p class="raya"></p>
-        </div>
-
-    </div>
-       
-        
-        <form id="form" class="topBefore">
-            
-              <input id="name" type="text" placeholder="NAME">
-              <input id="email" type="text" placeholder="E-MAIL">
-              <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
-          <input id="submit" type="submit" value="GO!">
-          
-        </form>
-        </body>
-
-
-    
 
   
-    </div>
-  </body>
+
+  <div id="navbar"></div>
+  <div id="banner"></div>
+  <div id="sobreMi"></div>
+  <div id="habilidades"></div>
+  <div id="proyectos"></div>
+  <div id="hobby"></div>
+  <div id="contacto"></div>
+  <div id="footer"></div>
+
+
+
+  
+  
+</body>
 </html>
+
+
+
+<script>
+    async function cargarComponente(destino, archivo) {
+      const cont = document.querySelector(destino);
+      if (!cont) {
+        console.error("Destino no encontrado:", destino);
+        return;
+      }
+
+      try {
+        const res = await fetch(archivo, { cache: "no-store" });
+        if (!res.ok) {
+          throw new Error("HTTP " + res.status + " - " + res.statusText);
+        }
+        const html = await res.text();
+        cont.innerHTML = html;
+      } catch (e) {
+        console.error("Error cargando componente:", archivo, e);
+        // mostrar feedback visual en la página (opcional)
+        cont.innerHTML = "<!-- Error cargando componente: " + archivo + " -->";
+      }
+    }
+
+    // Espera a que el DOM esté listo para evitar problemas de timing
+    document.addEventListener("DOMContentLoaded", () => {
+      // Si index.html y navBar.html están al mismo nivel:
+      cargarComponente("#navbar", "navBar.html");
+      cargarComponente("#banner", "banner.html");
+      cargarComponente("#sobreMi", "sobreMi.html");
+      cargarComponente("#habilidades", "habilidades.html");
+      cargarComponente("#proyectos", "proyectos.html");
+      cargarComponente("#hobby", "hobby.html");
+      cargarComponente("#contacto", "contacto.html");
+      cargarComponente("#footer", "footer.html");
+
+
+
+
+
+
+
+    });
+  </script>
