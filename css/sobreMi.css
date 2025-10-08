@@ -11,3 +11,8 @@
   height: 5px;
   background-color: var(--rojo);
 }
+
+#sobre-mi {
+  height: 100vh; 
+  background-color: var(--negro);
+}
