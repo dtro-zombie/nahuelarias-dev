@@ -1,32 +1,202 @@
-:root {
-  --gris: #32373d;
-  --negro: #000000;
-  --blanco: #ffffff;
-  --violeta: #2e0014;
-  --rojo: #ff1b1c;
-}
+      :root {
+            --gris: #32373d;
+            --negro: #000000;
+            --blanco: #ffffff;
+            --violeta: #2e0014;
+            --rojo: #ff1b1c;
+            --acento: #ff1b1c;
+            --texto-suave: #d3d3d3;
+            --card-bg: rgba(40, 40, 40, 0.7);
+            --card-border: rgba(255, 255, 255, 0.1);
+        }
 
-.habilidades {
-  background-color: #0b0b0b;
-  height: 100vh;
-  color: var(--blanco);
-}
+        /* ======= SECCIÓN HABILIDADES ======= */
+        #habilidades {
+            background: linear-gradient(180deg, #181818 0%, #0e0e0e 100%);
+            color: var(--blanco);
+            padding: 100px 0;
+            position: relative;
+            overflow: hidden;
+        }
 
-.containerHabilidadesTitulo {
-  padding-left: 20%;
-  margin-top: 10px;
-}
+        #habilidades::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 30% 20%, rgba(255, 27, 28, 0.05), transparent 60%),
+                        radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.03), transparent 70%);
+            z-index: 0;
+        }
 
-.containerDurasYBlandas {
-  align-items: flex-start;
-  display: flex;
-  flex-direction: column;
-  font-size: 20px;
-  height: 80%;
-}
+        #habilidades .container {
+            position: relative;
+            z-index: 1;
+        }
 
-.list-unstyled li {
-  padding-bottom: 5px;
+        /* ======= TÍTULO PRINCIPAL ======= */
+        #habilidades h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+        }
 
-  list-style: none;
-}
+        #habilidades h2::after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--acento);
+            transition: width 0.3s ease;
+            border-radius: 2px;
+        }
+
+       
+
+        /* ======= TARJETAS DE HABILIDADES ======= */
+        .skill-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 12px;
+            padding: 25px;
+            height: 100%;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .skill-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(255, 27, 28, 0.3);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3), 0 0 15px rgba(255, 27, 28, 0.1);
+        }
+
+        /* ======= SUBTÍTULOS ======= */
+        .skill-card h3 {
+            font-size: 1.4rem;
+            letter-spacing: 1px;
+            color: var(--acento);
+            border-left: 4px solid var(--acento);
+            padding-left: 10px;
+            margin-bottom: 25px;
+            text-shadow: 0 0 10px rgba(255, 27, 28, 0.4);
+        }
+
+        /* ======= LISTA DE HABILIDADES BLANDAS ======= */
+        .soft-skills-list {
+            padding-left: 0;
+        }
+
+        .soft-skills-list li {
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+            color: var(--texto-suave);
+            display: flex;
+            align-items: center;
+            line-height: 1.6;
+            transition: transform 0.2s ease, color 0.2s ease;
+            padding: 8px 12px;
+            border-radius: 6px;
+        }
+
+        .soft-skills-list li i {
+            margin-right: 10px;
+            font-size: 1.3rem;
+            color: var(--acento);
+            transition: transform 0.3s ease, color 0.3s ease;
+            width: 24px;
+            text-align: center;
+        }
+
+        .soft-skills-list li:hover {
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--blanco);
+            transform: translateX(5px);
+        }
+
+        .soft-skills-list li:hover i {
+            transform: scale(1.2) rotate(5deg);
+            color: var(--blanco);
+        }
+
+        /* ======= BARRAS DE PROGRESO ======= */
+        .skill-item {
+            margin-bottom: 20px;
+        }
+
+        .skill-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .skill-name {
+            display: flex;
+            align-items: center;
+            font-size: 1.05rem;
+            color: var(--texto-suave);
+        }
+
+        .skill-name i {
+            margin-right: 10px;
+            font-size: 1.3rem;
+            color: var(--acento);
+            width: 24px;
+            text-align: center;
+        }
+
+        .skill-percentage {
+            font-size: 0.9rem;
+            color: var(--texto-suave);
+        }
+
+        .skill-bar {
+            height: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .skill-progress {
+            height: 100%;
+            background: linear-gradient(90deg, var(--acento), #ff5e5f);
+            border-radius: 4px;
+            width: 0;
+            transition: width 1.5s ease-in-out;
+        }
+
+        /* ======= ANIMACIONES ======= */
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .skill-card {
+            animation: fadeUp 0.8s ease;
+        }
+
+        /* ======= RESPONSIVE ======= */
+        @media (max-width: 768px) {
+            #habilidades {
+                padding: 70px 0;
+            }
+
+            #habilidades h2 {
+                font-size: 2rem;
+            }
+
+            .skill-card {
+                margin-bottom: 30px;
+            }
+        }
