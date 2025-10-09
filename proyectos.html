@@ -1,49 +1,115 @@
-<section id="proyectos" class="d-flex align-items-center" style="min-height:100vh; background-color:#000;">
-  <div class="container py-5">
+ 
+ <link rel="stylesheet" href="css/proyectos.css">
+ 
+ <section id="proyectos" class="d-flex align-items-center" style="min-height:100vh;">
+        <div class="container py-5">
 
-    <!-- Título -->
-    <div class="text-center mb-5">
-      <h2 class="fw-bold text-white">Proyectos</h2>
-      <hr class="mx-auto" style="width: 60px; border-top: 4px solid #ff1b1c;">
+            <!-- Título -->
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-white">Mis Proyectos</h2>
+                <p class="section-subtitle">Una muestra de mis trabajos creativos donde aplico diferentes habilidades y técnicas</p>
+            </div>
+
+            <!-- Tarjetas -->
+            <div class="row justify-content-center g-4">
+
+                <!-- Proyecto 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-card">
+                        <div class="project-img-container">
+                            <!-- Imagen de placeholder - reemplazar con tu imagen real -->
+                            <div style="background: linear-gradient(135deg, #8B0000, #FF4500); height: 100%; display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">
+                                <i class="bi bi-palette"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link">
+                                        <i class="bi bi-eye"></i>
+                                    </a>
+                                    <a href="#" class="project-link">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title"><i class="bi bi-palette2"></i> Pintura Artística</h3>
+                            <p class="project-description">Exploración de diferentes técnicas y estilos pictóricos, desde el óleo hasta la acuarela, buscando expresar emociones a través del color y la forma.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Óleo</span>
+                                <span class="project-tag">Acrílico</span>
+                                <span class="project-tag">Acuarela</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-card">
+                        <div class="project-img-container">
+                            <!-- Imagen de placeholder - reemplazar con tu imagen real -->
+                            <div style="background: linear-gradient(135deg, #1E90FF, #9370DB); height: 100%; display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">
+                                <i class="bi bi-music-note-beamed"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link">
+                                        <i class="bi bi-eye"></i>
+                                    </a>
+                                    <a href="#" class="project-link">
+                                        <i class="bi bi-spotify"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title"><i class="bi bi-music-note-list"></i> Composición Musical</h3>
+                            <p class="project-description">Creación de piezas originales con guitarra, explorando diversos géneros y fusiones sonoras para transmitir historias a través de la música.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Guitarra</span>
+                                <span class="project-tag">Composición</span>
+                                <span class="project-tag">Producción</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 3 -->
+   <div class="col-lg-4 col-md-6">
+    <div class="project-card">
+        <div class="project-img-container">
+            <!-- Imagen real reemplazando el placeholder -->
+            <img src="src/fakeshop.png" alt="Front Ecommerce" class="project-img">
+            <div class="project-overlay">
+                <div class="project-links">
+                    <a href="https://fake-shop-eta.vercel.app/" class="project-link" target="_blank">
+                        <i class="bi bi-eye"></i>
+                    </a>
+                    <a href="https://github.com/dtro-zombie/fakeShop" class="project-link" target="_blank">
+                        <i class="bi bi-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="project-content">
+            <h3 class="project-title"><i class="bi bi-cart"></i> Front Ecommerce</h3>
+            <p class="project-description">Desarrollo de frontend para tienda online con diseño moderno y funcionalidades de carrito de compras, filtros y búsqueda integrada.</p>
+            <div class="project-tags">
+               <img src="src/icons/react_dark.svg" alt="React" class="icon-tech" />
+            </div>
+        </div>
     </div>
+</div>
 
-    <!-- Tarjetas -->
-    <div class="row justify-content-center g-4">
+            </div>
 
-      <!-- Proyecto 1 -->
-      <div class="col-md-4 col-sm-6">
-        <div class="card bg-dark text-white h-100 shadow-sm border-0">
-          <img src="./src/proyecto-pintura.jpg" class="card-img-top" alt="Proyecto de pintura">
-          <div class="card-body">
-            <h4 class="card-title text-warning">Pintura</h4>
-            <p class="card-text">Disfruto experimentar con diferentes técnicas y estilos de pintura para expresar mi creatividad.</p>
-          </div>
+            <!-- Botón Ver Más -->
+            <div class="projects-more">
+                <a href="#" class="btn-more">
+                    Ver todos los proyectos <i class="bi bi-arrow-right"></i>
+                </a>
+            </div>
+
         </div>
-      </div>
-
-      <!-- Proyecto 2 -->
-      <div class="col-md-4 col-sm-6">
-        <div class="card bg-dark text-white h-100 shadow-sm border-0">
-          <img src="./src/proyecto-musica.jpg" class="card-img-top" alt="Proyecto de música">
-          <div class="card-body">
-            <h4 class="card-title text-warning">Música</h4>
-            <p class="card-text">Toco la guitarra y disfruto componer canciones en mi tiempo libre, explorando nuevos sonidos.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Proyecto 3 -->
-      <div class="col-md-4 col-sm-6">
-        <div class="card bg-dark text-white h-100 shadow-sm border-0">
-          <img src="./src/proyecto-fotografia.jpg" class="card-img-top" alt="Proyecto de fotografía">
-          <div class="card-body">
-            <h4 class="card-title text-warning">Fotografía</h4>
-            <p class="card-text">Me apasiona capturar momentos únicos a través de la lente, buscando la historia detrás de cada imagen.</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section>
+    </section>

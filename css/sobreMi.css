@@ -1,18 +1,48 @@
-:root {
-  --gris: #32373d;
-  --negro: #000000;
-  --blanco: #ffffff;
-  --violeta: #2e0014;
-  --rojo: #ff1b1c;
+
+
+
+
+/* ======= DESCRIPCIÓN ======= */
+#sobre-mi p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #d9d9d9;
+  margin-bottom: 1rem;
 }
 
-.raya {
-  width: 100px;
-  height: 5px;
-  background-color: var(--rojo);
+#sobre-mi strong {
+  color: #ff1b1c;
 }
 
-#sobre-mi {
-  height: 100vh; 
-  background-color: var(--negro);
+
+/* ======= ICONOS DE TECNOLOGÍAS ======= */
+.icon-tech {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  /* filter: grayscale(100%) brightness(0.8); */
 }
+
+.icon-tech:hover {
+  transform: scale(1.15);
+  filter: grayscale(0%) brightness(1);
+}
+
+/* ======= TEXTO DE TECNOLOGÍAS ======= */
+.container p b {
+  color: #ff1b1c;
+  font-weight: 600;
+}
+
+/* ======= ANIMACIÓN DE APARICIÓN ======= */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
