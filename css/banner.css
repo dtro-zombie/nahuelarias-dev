@@ -1,5 +1,339 @@
+/* ======= VARIABLES ======= */
+:root {
+    --rojo: #ff1b1c;
+    --negro: #000000;
+    --blanco: #ffffff;
+    --texto-suave: #e0e0e0;
+    --sombra: rgba(0, 0, 0, 0.5);
+}
+
+/* ======= BANNER PRINCIPAL ======= */
+.banner {
+    position: relative;
+    height: 100vh;
+    min-height: 600px;
+    overflow: hidden;
+    background: var(--negro);
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background: linear-gradient(
+        45deg,
+        rgba(0, 0, 0, 0.7) 0%,
+        rgba(255, 27, 28, 0.1) 50%,
+        rgba(0, 0, 0, 0.7) 100%
+    ); */
+    z-index: 1;
+}
+
+.banner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background: radial-gradient(
+        circle at 30% 50%,
+        transparent 0%,
+        rgba(0, 0, 0, 0.8) 70%
+    ); */
+    z-index: 1;
+}
+
 .banner img {
-  height: 100vh;       /* alto del banner */
-  object-fit: cover;   /* recorta sin deformar */
-  filter: brightness(70%); /* oscurece un poco para resaltar el texto */
+    height: 100vh;
+    min-height: 600px;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(0.7) contrast(1.1);
+    /* transition: transform 0.8s ease; */
+}
+
+/* .banner:hover img {
+    transform: scale(1.05);
+} */
+
+/* ======= EFECTO GLITCH PARA EL TÍTULO ======= */
+.glitch-title {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    position: relative;
+    color: var(--blanco);
+    text-shadow: 2px 2px 8px var(--sombra);
+    animation: glitch 5s infinite;
+}
+
+.glitch-title::before,
+.glitch-title::after {
+    content: "Bienvenido a mi sitio";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+
+.glitch-title::before {
+    animation: glitch-top 3s infinite linear alternate-reverse;
+    color: var(--rojo);
+    z-index: -1;
+}
+
+.glitch-title::after {
+    animation: glitch-bottom 2.5s infinite linear alternate-reverse;
+    color: #00ffff;
+    z-index: -2;
+}
+
+@keyframes glitch {
+    0%, 12%, 15%, 52%, 55%, 82%, 85%, 100% {
+        text-shadow: 2px 2px 8px var(--sombra);
+        transform: translateX(0);
+    }
+    13% {
+        text-shadow: -2px -2px 8px var(--rojo);
+        transform: translateX(-2px);
+    }
+    14% {
+        text-shadow: 2px -2px 8px #00ffff;
+        transform: translateX(2px);
+    }
+    53% {
+        text-shadow: -2px 2px 8px var(--rojo);
+        transform: translateX(-1px);
+    }
+    54% {
+        text-shadow: 2px 2px 8px #00ffff;
+        transform: translateX(1px);
+    }
+    83% {
+        text-shadow: -2px -2px 8px var(--rojo);
+        transform: translateX(-3px);
+    }
+    84% {
+        text-shadow: 2px -2px 8px #00ffff;
+        transform: translateX(3px);
+    }
+}
+
+@keyframes glitch-top {
+    0%, 100% {
+        transform: translateY(0) translateX(0);
+        clip-path: polygon(0 0, 100% 0, 100% 35%, 0 35%);
+    }
+    10% {
+        transform: translateY(-1px) translateX(2px);
+        clip-path: polygon(0 15%, 100% 15%, 100% 35%, 0 35%);
+    }
+    20% {
+        transform: translateY(1px) translateX(-2px);
+        clip-path: polygon(0 25%, 100% 25%, 100% 45%, 0 45%);
+    }
+    30% {
+        transform: translateY(-2px) translateX(1px);
+        clip-path: polygon(0 5%, 100% 5%, 100% 25%, 0 25%);
+    }
+    40% {
+        transform: translateY(2px) translateX(-1px);
+        clip-path: polygon(0 35%, 100% 35%, 100% 55%, 0 55%);
+    }
+    50% {
+        transform: translateY(-1px) translateX(3px);
+        clip-path: polygon(0 45%, 100% 45%, 100% 65%, 0 65%);
+    }
+    60% {
+        transform: translateY(1px) translateX(-3px);
+        clip-path: polygon(0 55%, 100% 55%, 100% 75%, 0 75%);
+    }
+    70% {
+        transform: translateY(-3px) translateX(2px);
+        clip-path: polygon(0 65%, 100% 65%, 100% 85%, 0 85%);
+    }
+    80% {
+        transform: translateY(3px) translateX(-2px);
+        clip-path: polygon(0 75%, 100% 75%, 100% 95%, 0 95%);
+    }
+    90% {
+        transform: translateY(-2px) translateX(1px);
+        clip-path: polygon(0 85%, 100% 85%, 100% 100%, 0 100%);
+    }
+}
+
+@keyframes glitch-bottom {
+    0%, 100% {
+        transform: translateY(0) translateX(0);
+        clip-path: polygon(0 65%, 100% 65%, 100% 100%, 0 100%);
+    }
+    15% {
+        transform: translateY(1px) translateX(-2px);
+        clip-path: polygon(0 75%, 100% 75%, 100% 100%, 0 100%);
+    }
+    25% {
+        transform: translateY(-1px) translateX(2px);
+        clip-path: polygon(0 55%, 100% 55%, 100% 85%, 0 85%);
+    }
+    35% {
+        transform: translateY(2px) translateX(-1px);
+        clip-path: polygon(0 45%, 100% 45%, 100% 75%, 0 75%);
+    }
+    45% {
+        transform: translateY(-2px) translateX(1px);
+        clip-path: polygon(0 35%, 100% 35%, 100% 65%, 0 65%);
+    }
+    55% {
+        transform: translateY(1px) translateX(-3px);
+        clip-path: polygon(0 25%, 100% 25%, 100% 55%, 0 55%);
+    }
+    65% {
+        transform: translateY(-1px) translateX(3px);
+        clip-path: polygon(0 15%, 100% 15%, 100% 45%, 0 45%);
+    }
+    75% {
+        transform: translateY(3px) translateX(-2px);
+        clip-path: polygon(0 5%, 100% 5%, 100% 35%, 0 35%);
+    }
+    85% {
+        transform: translateY(-3px) translateX(2px);
+        clip-path: polygon(0 0%, 100% 0%, 100% 25%, 0 25%);
+    }
+}
+
+/* ======= CONTENIDO DEL BANNER ======= */
+.banner .position-absolute {
+    z-index: 2;
+    width: 90%;
+    max-width: 800px;
+}
+
+.banner .lead {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: var(--texto-suave);
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 4px var(--sombra);
+}
+
+/* ======= BOTÓN PRINCIPAL ======= */
+.banner .btn {
+    background: linear-gradient(45deg, var(--rojo), #ff5e5f);
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.4s ease;
+    box-shadow: 0 8px 25px rgba(255, 27, 28, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.banner .btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.banner .btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(255, 27, 28, 0.4);
+}
+
+.banner .btn:hover::before {
+    left: 100%;
+}
+
+/* ======= ANIMACIÓN DE ENTRADA ======= */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -40%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.banner .position-absolute {
+    animation: fadeInUp 1.2s ease-out;
+}
+
+/* ======= RESPONSIVE ======= */
+@media (max-width: 1200px) {
+    .glitch-title {
+        font-size: 3.5rem;
+    }
+    
+    .banner .lead {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner {
+        height: 80vh;
+        min-height: 500px;
+    }
+    
+    .banner img {
+        height: 80vh;
+        min-height: 500px;
+    }
+    
+    .glitch-title {
+        font-size: 2.5rem;
+    }
+    
+    .banner .lead {
+        font-size: 1.1rem;
+    }
+    
+    .banner .btn {
+        padding: 12px 30px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .banner {
+        height: 70vh;
+        min-height: 400px;
+    }
+    
+    .banner img {
+        height: 70vh;
+        min-height: 400px;
+    }
+    
+    .glitch-title {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .banner .lead {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .banner .btn {
+        padding: 10px 25px;
+        font-size: 0.9rem;
+    }
 }

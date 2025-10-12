@@ -1,93 +1,134 @@
-<section id="hobbies" class="d-flex align-items-center" style="min-height:100vh; background-color:#212121;">
-  <div class="container py-5">
+ 
+<link rel="stylesheet" href="./css/hobbies.css">
+ 
+ 
+ <section id="hobbies" class="d-flex align-items-center" style="min-height:100vh;">
+        <div class="container py-5">
 
-    <!-- Título -->
-    <div class="text-center mb-5">
-      <h2 class="fw-bold text-white">Hobbies</h2>
-      <hr class="mx-auto" style="width: 60px; border-top: 4px solid #ff1b1c;">
+            <!-- Título -->
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-white">Mis Hobbies</h2>
+                <p class="section-subtitle">Actividades que disfruto en mi tiempo libre y que me ayudan a mantener el equilibrio entre trabajo y vida personal</p>
+            </div>
+
+         <!-- Hobbies Creativos -->
+<div class="hobby-category">
+    <div class="row justify-content-center g-4">
+
+        <!-- Impresión 3D -->
+        <div class="col-lg-4 col-md-6">
+            <div class="hobby-card">
+                <span class="category-badge creative-badge">Tecnológico</span>
+                <div class="hobby-img-container">
+                    <img src="./src/impresion3d.jpg" alt="impresion 3d" class="hobby-img">
+                    <div class="hobby-overlay">
+                        <div class="hobby-icon">
+                            <i class="bi bi-cpu"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="hobby-content">
+                    <h3 class="hobby-title"><i class="bi bi-printer"></i> Impresión 3D</h3>
+                    <p class="hobby-description">
+                        Me apasiona el diseño y la fabricación de piezas personalizadas con impresoras 3D, explorando nuevas ideas y materiales.
+                    </p>
+                    <div class="hobby-features">
+                        <span class="hobby-feature"><i class="bi bi-cube"></i> Modelado</span>
+                        <span class="hobby-feature"><i class="bi bi-gear"></i> Prototipado</span>
+                        <span class="hobby-feature"><i class="bi bi-brush"></i> Postprocesado</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Electrónica -->
+<div class="col-lg-4 col-md-6">
+    <div class="hobby-card">
+        <span class="category-badge creative-badge">Tecnológico</span>
+        <div class="hobby-img-container">
+            <img src="./src/electronica.jpeg" alt="electronica" class="hobby-img">
+            <div class="hobby-overlay">
+                <div class="hobby-icon">
+                    <i class="bi bi-lightning-charge"></i>
+                </div>
+            </div>
+        </div>
+        <div class="hobby-content">
+            <h3 class="hobby-title"><i class="bi bi-motherboard"></i> Electrónica</h3>
+            <p class="hobby-description">
+                Me gusta experimentar con microcontroladores y automatizar proyectos combinando hardware y software.
+            </p>
+            <div class="hobby-features">
+                <span class="hobby-feature"><i class="bi bi-cpu"></i> Arduino</span>
+                <span class="hobby-feature"><i class="bi bi-broadcast-pin"></i> Sensores</span>
+                <span class="hobby-feature"><i class="bi bi-gear-wide-connected"></i> Automatización</span>
+            </div>
+        </div>
     </div>
+</div>
 
-    <!-- Hobbies Creativos -->
-    <div class="mb-5">
-      <h3 class="text-center text-warning mb-4">Hobbies Creativos</h3>
-      <div class="row justify-content-center g-4">
-
-        <!-- Hobby 1 -->
-        <div class="col-md-4 col-sm-6">
-          <div class="card bg-dark text-white h-100 shadow-sm border-0">
-            <img src="./src/hobby-pintura.jpg" class="card-img-top" alt="Pintura">
-            <div class="card-body">
-              <h4 class="card-title text-warning">Pintura</h4>
-              <p class="card-text">Disfruto experimentar con diferentes técnicas y estilos de pintura para expresar mi creatividad.</p>
+<!-- CNC Láser -->
+<div class="col-lg-4 col-md-6">
+    <div class="hobby-card">
+        <span class="category-badge creative-badge">Tecnológico</span>
+        <div class="hobby-img-container">
+            <img src="./src/laser.jpg" alt="CNC Láser" class="hobby-img">
+            <div class="hobby-overlay">
+                <div class="hobby-icon">
+                    <i class="bi bi-bezier2"></i>
+                </div>
             </div>
-          </div>
         </div>
-
-        <!-- Hobby 2 -->
-        <div class="col-md-4 col-sm-6">
-          <div class="card bg-dark text-white h-100 shadow-sm border-0">
-            <img src="./src/hobby-musica.jpg" class="card-img-top" alt="Música">
-            <div class="card-body">
-              <h4 class="card-title text-warning">Música</h4>
-              <p class="card-text">Toco la guitarra y me encanta componer canciones en mi tiempo libre, explorando nuevos sonidos.</p>
+        <div class="hobby-content">
+            <h3 class="hobby-title"><i class="bi bi-layers-half"></i> CNC Láser</h3>
+            <p class="hobby-description">
+                Trabajo con máquinas CNC láser para cortar, grabar y crear piezas personalizadas en madera, acrílico y otros materiales con alta precisión.
+            </p>
+            <div class="hobby-features">
+                <span class="hobby-feature"><i class="bi bi-vector-pen"></i> Diseño vectorial</span>
+                <span class="hobby-feature"><i class="bi bi-bricks"></i> Grabado y corte</span>
+                <span class="hobby-feature"><i class="bi bi-rulers"></i> Precisión</span>
             </div>
-          </div>
         </div>
-
-        <!-- Hobby 3 -->
-        <div class="col-md-4 col-sm-6">
-          <div class="card bg-dark text-white h-100 shadow-sm border-0">
-            <img src="./src/hobby-fotografia.jpg" class="card-img-top" alt="Fotografía">
-            <div class="card-body">
-              <h4 class="card-title text-warning">Fotografía</h4>
-              <p class="card-text">Me apasiona capturar momentos únicos a través de la lente, buscando la historia detrás de cada imagen.</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
     </div>
+</div>
 
-    <!-- Hobbies Activos -->
-    <div>
-      <h3 class="text-center text-warning mb-4">Hobbies Activos</h3>
-      <div class="row justify-content-center g-4">
 
-        <!-- Hobby 4 -->
-        <div class="col-md-4 col-sm-6">
-          <div class="card bg-dark text-white h-100 shadow-sm border-0">
-            <img src="./src/hobby-ciclismo.jpg" class="card-img-top" alt="Ciclismo">
-            <div class="card-body">
-              <h4 class="card-title text-warning">Ciclismo</h4>
-              <p class="card-text">Disfruto de largas rutas en bicicleta explorando nuevas áreas y conectando con la naturaleza.</p>
+<!-- Autos -->
+<div class="col-lg-4 col-md-6">
+    <div class="hobby-card">
+        <span class="category-badge creative-badge">Pasión</span>
+        <div class="hobby-img-container">
+            <img src="./src/auto.jpg" alt="Autos" class="hobby-img">
+            <div class="hobby-overlay">
+                <div class="hobby-icon">
+                    <i class="bi bi-car-front-fill"></i>
+                </div>
             </div>
-          </div>
         </div>
-
-        <!-- Hobby 5 -->
-        <div class="col-md-4 col-sm-6">
-          <div class="card bg-dark text-white h-100 shadow-sm border-0">
-            <img src="./src/hobby-senderismo.jpg" class="card-img-top" alt="Senderismo">
-            <div class="card-body">
-              <h4 class="card-title text-warning">Senderismo</h4>
-              <p class="card-text">Me encanta caminar por la naturaleza y descubrir nuevos senderos cada fin de semana.</p>
+        <div class="hobby-content">
+            <h3 class="hobby-title"><i class="bi bi-speedometer2"></i> Autos</h3>
+            <p class="hobby-description">
+                Me apasiona todo lo relacionado con automóviles: electrónica, mecánica, diseño, rendimiento y modificaciones para mejorar su funcionamiento y estilo.
+            </p>
+            <div class="hobby-features">
+                <span class="hobby-feature"><i class="bi bi-tools"></i> Mecánica</span>
+                <span class="hobby-feature"><i class="bi bi-brush"></i> Diseño</span>
+                <span class="hobby-feature"><i class="bi bi-gear-wide-connected"></i> Modificaciones</span>
             </div>
-          </div>
         </div>
-
-        <!-- Hobby 6 -->
-        <div class="col-md-4 col-sm-6">
-          <div class="card bg-dark text-white h-100 shadow-sm border-0">
-            <img src="./src/hobby-esqui.jpg" class="card-img-top" alt="Esquí">
-            <div class="card-body">
-              <h4 class="card-title text-warning">Esquí</h4>
-              <p class="card-text">Practico esquí durante la temporada invernal y disfruto de la adrenalina en la nieve.</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
     </div>
+</div>
 
-  </div>
-</section>
+
+
+    </div>
+</div>
+
+
+
+
+                </div>
+         
+    </section>
