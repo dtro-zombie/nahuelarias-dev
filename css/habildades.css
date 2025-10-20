@@ -10,6 +10,32 @@
             --card-border: rgba(255, 255, 255, 0.1);
         }
 
+
+           #habilidades h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        #habilidades h2::after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--rojo);
+            transition: width 0.3s ease;
+            border-radius: 2px;
+        }
+
+         #habilidades h2:hover::after {
+            width: 120px;
+        }
+
         /* ======= SECCIÓN HABILIDADES ======= */
         #habilidades {
             background: linear-gradient(180deg, #181818 0%, #0e0e0e 100%);

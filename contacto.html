@@ -1,43 +1,46 @@
-<section id="contacto" class="d-flex align-items-center" style="min-height:100vh; background-color:#000;">
-  <div class="container py-5">
+<link rel="stylesheet" href="./css/contacto.css">
 
-    <!-- Título -->
+<section id="contacto" class="d-flex align-items-center" style="min-height:100vh;">
+  <div class="container py-5">
     <div class="text-center mb-5">
-      <h2 class="fw-bold text-white">Contactame</h2>
-      <hr class="mx-auto" style="width: 60px; border-top: 4px solid #ff1b1c;">
+      <h2 class="fw-bold text-white">Contáctame</h2>
+      <p class="contact-subtitle">¿Tienes un proyecto en mente? Hablemos y hagámoslo realidad</p>
     </div>
 
-    <!-- Formulario -->
     <div class="row justify-content-center">
-      <div class="col-lg-6 col-md-8">
-
-        <form id="form" class="bg-dark p-4 rounded-3 shadow">
-          
-          <div class="mb-3">
-            <label for="name" class="form-label text-white">Nombre</label>
-            <input id="name" type="text" class="form-control bg-secondary text-white border-0" placeholder="Tu nombre">
+      <div class="col-lg-8 col-md-10">
+        <form id="contactForm" class="contact-form">
+          <div class="form-group">
+            <label for="name" class="form-label">
+              <i class="bi bi-person"></i> Nombre Completo
+            </label>
+            <input type="text" class="form-control" id="name" placeholder="Ingresa tu nombre completo" required>
+            <div class="invalid-feedback">Por favor ingresa tu nombre.</div>
           </div>
 
-          <div class="mb-3">
-            <label for="email" class="form-label text-white">Email</label>
-            <input id="email" type="email" class="form-control bg-secondary text-white border-0" placeholder="Tu correo electrónico">
+          <div class="form-group">
+            <label for="email" class="form-label">
+              <i class="bi bi-envelope"></i> Correo Electrónico
+            </label>
+            <input type="email" class="form-control" id="email" placeholder="tu@email.com" required>
+            <div class="invalid-feedback">Por favor ingresa un email válido.</div>
           </div>
 
-          <div class="mb-3">
-            <label for="message" class="form-label text-white">Mensaje</label>
-            <textarea id="message" class="form-control bg-secondary text-white border-0" rows="5" placeholder="Escribí tu mensaje"></textarea>
+          <div class="form-group">
+            <label for="message" class="form-label">
+              <i class="bi bi-chat-left-text"></i> Mensaje
+            </label>
+            <textarea class="form-control" id="message" rows="5" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
+            <div class="invalid-feedback">Por favor escribe tu mensaje.</div>
           </div>
 
-          <div class="text-center">
-            <button id="submit" type="submit" class="btn btn-danger px-5 py-2 fw-bold shadow-sm">
-              Enviar
+          <div class="text-center mt-4">
+            <button type="submit" class="submit-btn">
+              <span class="btn-text">Enviar Mensaje</span>
             </button>
           </div>
-
         </form>
-
       </div>
     </div>
-
   </div>
 </section>
